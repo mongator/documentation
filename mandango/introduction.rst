@@ -4,7 +4,7 @@ Introduction
 Mandango is an easy, poweful and ultrafast *Object Document Mapper* (ODM) for
 PHP and MongoDB.
 
-¿What is MongoDB?
+What is MongoDB?
 -----------------
 
 MongoDB (*Mongo*) is a scalable, high-performance, open source,
@@ -15,10 +15,9 @@ Mongo (and the NOSQL_ movement in general) answer to the
 (especially web) have, due to the high number of reads, writes and the high
 amount of information to store.
 
-.. note::
-  If you want to know more about MongoDB, you can visit its web: `http://www.mongodb.org`_
+> If you want to know more about MongoDB, you can visit its web: `http://www.mongodb.org`_
 
-¿What is an ODM?
+What is an ODM?
 -----------------
 
 An ODM is a tool that maps the structure of the databases in objects
@@ -31,7 +30,7 @@ utilities that can simplify a lot common tasks.
 An ODM also has a disadvantage: the performance. This is due to using
 objects and abstracting operations.
 
-¿Why an ODM with MongoDB?
+Why an ODM with MongoDB?
 --------------------------
 
 Apparently the Mongo philosophy doesn't agree with the philosophy of ODM,
@@ -44,7 +43,7 @@ your applications are running as soon as it is possible, because it isn't
 worthwhile to spend a lot of time finishing a superfast application if when it
 is going to be in production it can't compete or it's unmaintainable.
 
-¿Why Mandango?
+Why Mandango?
 ------------------
 
 Mandango is to the ODMs what Mongo is to databases.
@@ -66,22 +65,18 @@ Mandango is to the ODMs what Mongo is to databases.
 * **Integratión with IDEs**: Mandango uses generated code, so you may integrate it with your IDE.
 * **Tested**: Mandango is completely tested with automated test with PHPUnit_.
 
-.. note::
-
-	 Mandango is **the fastest mapper** in PHP by far.
-	 More information in the `performance comparison`_.
+> Mandango is **the fastest mapper** in PHP by far.
+> More information in the `performance comparison`_.
 
 Requirements
 ------------
 
-From your computer
-^^^^^^^^^^^^^^^^^^
+### From your computer
 
 Mandango requires PHP 5.3.0 or greater, and of course MongoDB and the PHP
 driver for MongoDB (1.0.11 or greater).
 
-From you
-^^^^^^^^
+### From you
 
 Mandango uses `object oriented PHP`_ and Mongo_, so if you want to start using it
 you should know both things minimally at least.
