@@ -10,7 +10,7 @@ What is MongoDB?
 MongoDB (*Mongo*) is a scalable, high-performance, open source,
 document-oriented database.
 
-Mongo (and the NOSQL_ movement in general) answer to the
+Mongo (and the [NOSQL] movement in general) answer to the
 **needs for performance** of databases, that each time more applications
 (especially web) have, due to the high number of reads, writes and the high
 amount of information to store.
@@ -89,7 +89,7 @@ You can install Mandango downloading it directly, by git, svn.
 More information in the `Mandango installation page`_.
 
 
-.. _NOSQL: http://en.wikipedia.org/wiki/NoSQL
+[NOSQL]: http://en.wikipedia.org/wiki/NoSQL
 .. _performance comparison: http://mandango.org/performance
 .. _http://www.mongodb.org: http://www.mongodb.org
 .. _references and embeds: http://www.mongodb.org/display/DOCS/Schema+Design#SchemaDesign-Embedvs.Reference
