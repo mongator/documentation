@@ -317,6 +317,14 @@ $writer = new AssetWriter('/path/to/web');
 $writer->writeManagerAssets($am);
 ```
 
+> test
+
+> These assets need to be written to the web directory so these URLs don't
+return 404 errors.
+
+> These assets need to be written to the web directory so these URLs don't
+> return 404 errors.
+
 ---
 
 Assetic is based on the Python [webassets][1] library (available on
