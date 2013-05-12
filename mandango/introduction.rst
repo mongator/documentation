@@ -15,7 +15,7 @@ Mongo (and the [NOSQL] movement in general) answer to the
 (especially web) have, due to the high number of reads, writes and the high
 amount of information to store.
 
-> If you want to know more about MongoDB, you can visit its web: `http://www.mongodb.org`_
+> If you want to know more about MongoDB, you can visit its web: [http://www.mongodb.org]
 
 What is an ODM?
 -----------------
@@ -54,19 +54,19 @@ Mandango is to the ODMs what Mongo is to databases.
 
 ¿Aren't you convinced yet? Let me show you a few more features:
 
-* **References and Embeds**: Mandango allows you to work with `references and embeds`_ very easily.
+* **References and Embeds**: Mandango allows you to work with [references and embeds] very easily.
 * **Extensions**: Mandango can be customized infinitely with Mondator Extensions.
-* **Indexes**: Mandango allows you to work easily with the indexes_ of the collections.
+* **Indexes**: Mandango allows you to work easily with the [indexes] of the collections.
 * **Events**: Mandango throws _hooks_ before and after inserting, updating, saving and deleting documents.
-* **GridFS**: Mandango allows to save files of any size using GridFS_.
+* **GridFS**: Mandango allows to save files of any size using [GridFS].
 * **Log**: Mandango allows to save logs of the queries to improve the development.
-* **batchInsert**: Mandango uses batchInsert_ to insert documents in an efficient way.
-* **Atomic Operations**: Mandango uses `atomic operations`_ to update and delete documents efficiently.
+* **batchInsert**: Mandango uses [batchInsert] to insert documents in an efficient way.
+* **Atomic Operations**: Mandango uses [atomic operations] to update and delete documents efficiently.
 * **Integratión with IDEs**: Mandango uses generated code, so you may integrate it with your IDE.
-* **Tested**: Mandango is completely tested with automated test with PHPUnit_.
+* **Tested**: Mandango is completely tested with automated test with [PHPUnit].
 
 > Mandango is **the fastest mapper** in PHP by far.
-> More information in the `performance comparison`_.
+> More information in the [performance comparison].
 
 Requirements
 ------------
@@ -78,7 +78,7 @@ driver for MongoDB (1.0.11 or greater).
 
 ### From you
 
-Mandango uses `object oriented PHP`_ and Mongo_, so if you want to start using it
+Mandango uses [object oriented PHP] and [Mongo], so if you want to start using it
 you should know both things minimally at least.
 
 Instalation
@@ -86,18 +86,18 @@ Instalation
 
 You can install Mandango downloading it directly, by git, svn.
 
-More information in the `Mandango installation page`_.
+More information in the [Mandango installation page].
 
 
 [NOSQL]: http://en.wikipedia.org/wiki/NoSQL
-.. _performance comparison: http://mandango.org/performance
-.. _http://www.mongodb.org: http://www.mongodb.org
-.. _references and embeds: http://www.mongodb.org/display/DOCS/Schema+Design#SchemaDesign-Embedvs.Reference
-.. _indexes: http://www.mongodb.org/display/DOCS/Indexes
-.. _GridFS: http://www.mongodb.org/display/DOCS/GridFS
-.. _batchInsert: http://www.php.net/manual/en/mongocollection.batchinsert.php
-.. _atomic operations: http://www.mongodb.org/display/DOCS/Atomic+Operations
-.. _PHPUnit: http://www.phpunit.de
-.. _object oriented PHP: http://www.php.net/manual/en/language.oop5.php
-.. _Mongo: http://www.mongodb.org/display/DOCS/Tutorial
-.. _Mandango installation page: http://mandango.org/installation
+[performance comparison]: http://mandango.org/performance
+[http://www.mongodb.org]: http://www.mongodb.org
+[references and embeds]: http://www.mongodb.org/display/DOCS/Schema+Design#SchemaDesign-Embedvs.Reference
+[indexes]: http://www.mongodb.org/display/DOCS/Indexes
+[GridFS]: http://www.mongodb.org/display/DOCS/GridFS
+[batchInsert]: http://www.php.net/manual/en/mongocollection.batchinsert.php
+[atomic operations]: http://www.mongodb.org/display/DOCS/Atomic+Operations
+[PHPUnit]: http://www.phpunit.de
+[object oriented PHP]: http://www.php.net/manual/en/language.oop5.php
+[Mongo]: http://www.mongodb.org/display/DOCS/Tutorial
+[Mandango installation page]: http://mandango.org/installation
