@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Mandango documentation build configuration file, created by
+# Mongator documentation build configuration file, created by
 # sphinx-quickstart on Wed Feb 15 12:30:10 2012.
 #
 # This file is execfile()d with the current directory set to its containing dir.
