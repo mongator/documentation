@@ -107,10 +107,33 @@ of the criteria. You can use the ``->mergeCriteria()`` method for this::
         $query->mergeCriteria(array('is_active' => true));
     }
 
+Default Query Methods
+---------------------
+
+Mongator generates a query class for each document classes. These query classes
+already contain some convenient finder methods so you don't have to manually
+write them.
+
+Specifically, for every scalar or reference field in the document, you get a
+``findBy<Field>`` method. Reference fields are smart, and you can call them
+with a document or just with a ``MongoId`` ::
+
+    $query
+        ->findByAuthor($author)
+        ->findByTag('tips');
+
+    // the author can be an Id
+    $query->findByAuthor($authorId);
+
+For reference fields, you also get a ``findBy<Field>Ids`` method that accepts an array of ids::
+
+    $authors = array($authorId1, $authorId2, $authorId3);
+    $query->findByAuthorIds($authors);
+
 Reusing logic
 -------------
 
-A query class is generated for each document class, so you can save logic on it::
+The generated query classes are a good place to save logic for reuse::
 
     // Model\ArticleQuery
     public function active()
@@ -119,10 +142,11 @@ A query class is generated for each document class, so you can save logic on it:
     }
 
     // using
-    $query->criteria(array('author' => $author->getId));
+    $query->findByAuthor($author);
     if ($active) {
         $query->active();
     }
+
 
 References many
 ---------------
