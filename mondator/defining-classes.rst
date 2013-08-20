@@ -8,9 +8,9 @@ Classes
 -------
 
 The classes are defined with the class
-*Mandango\\Mondator\\Definition\\Definition*::
+*Mongator\\Mondator\\Definition\\Definition*::
 
-    use Mandango\Mondator\Definition\Definition;
+    use Mongator\Mondator\Definition\Definition;
 
     // constructor: class
     $definition = new Definition($class);
@@ -49,9 +49,9 @@ The classes are defined with the class
 Methods
 ^^^^^^^
 
-The methods use the class *Mandango\Mondator\Definition\Method*::
+The methods use the class *Mongator\Mondator\Definition\Method*::
 
-    use Mandango\Mondator\Definition\Method;
+    use Mongator\Mondator\Definition\Method;
 
     // constructor: visibility, name, arguments, code
     $method = new Method('public', 'myMethod', '$var1, $var2', <<<EOF
@@ -114,9 +114,9 @@ The methods are assigned to the definitions::
 Properties
 ^^^^^^^^^^
 
-The properties use the class *Mandango\Mondator\Definition\Property*::
+The properties use the class *Mongator\Mondator\Definition\Property*::
 
-    use Mandango\Mondator\Definition\Property;
+    use Mongator\Mondator\Definition\Property;
 
     // constructor: visibility, name, value
     $property = new Property('public', 'myProperty', 'value');

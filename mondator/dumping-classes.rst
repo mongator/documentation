@@ -7,7 +7,7 @@ The Mondator's Dumper dumps in a string the PHP code of the class of a
 definition. This PHP code is generated according to the options in the
 definition and the methods and properties that it has::
 
-    use Mandango\Mondator\Dumper;
+    use Mongator\Mondator\Dumper;
 
     // constructor: definition
     $dumper = new Dumper($definition);

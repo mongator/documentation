@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Mandango documentation build configuration file, created by
+# Mongator documentation build configuration file, created by
 # sphinx-quickstart on Wed Feb 15 12:30:10 2012.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -40,8 +40,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Mandango'
-copyright = u'2012, Pablo Díez'
+project = u'Mongator'
+copyright = u'2012 - 2013, Pablo Díez, M\xc3\xa1ximo Cuadros, Daniel Ripoll\xc3\xa9s'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -165,7 +165,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Mandangodoc'
+htmlhelp_basename = 'Mongatordoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -184,8 +184,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index2', 'Mandango.tex', u'Mandango Documentation',
-   u'Pablo Díez', 'manual'),
+  ('index2', 'Mongator.tex', u'Mongator Documentation',
+   u'Pablo Díez, Máximo Cuadros, Daniel Ripollés', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -214,8 +214,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index2', 'mandango', u'Mandango Documentation',
-     [u'Pablo Díez'], 1)
+    ('index2', 'mongator', u'Mongator Documentation',
+     [u'Pablo Díez, Máximo Cuadros, Daniel Ripollés'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -228,8 +228,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index2', 'Mandango', u'Mandango Documentation',
-   u'Pablo Díez', 'Mandango', 'One line description of project.',
+    ('index2', 'Mongator', u'Mongator Documentation',
+   u'Pablo Díez, Máximo Cuadros, Daniel Ripollés', 'Mongator', 'One line description of project.',
    'Miscellaneous'),
 ]
 
