@@ -34,7 +34,7 @@ Usage
 
 ::
 
-    $article = $mandango->create('Model\Article')->setTitle('Mongator')->save();
+    $article = $mongator->create('Model\Article')->setTitle('Mongator')->save();
 
     echo $article->getCreatedAt(); // new \DateTime('now')
     echo $article->getUpdatedAt(); // null

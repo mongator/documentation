@@ -7,7 +7,7 @@ Connection
 ----------
 
 You can define explicitly the connection in the documents. Otherwise the
-default connection of the mandango will be used::
+default connection of the mongator will be used::
 
     array(
         'Model\Article' => array(

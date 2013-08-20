@@ -6,8 +6,8 @@ and they are defined in YAML_.
 
 .. code-block:: yaml
 
-    app/config/mandango/*.yml
-    *Bundle/Resources/config/mandango/*.yml
+    app/config/mongator/*.yml
+    *Bundle/Resources/config/mongator/*.yml
 
 You must to use the standard namespace *Model* in the classes, thus the bundles will be
 reusable and coherent.
@@ -16,7 +16,7 @@ You don't need to use bundle namespace in your application classes:
 
 .. code-block:: yaml
 
-    # app/config/mandango/schema.yml
+    # app/config/mongator/schema.yml
     Model\Article:
         fields:
             title:   string
@@ -26,7 +26,7 @@ In the bundles is necessary to use the bundle name to separate the classes by bu
 
 .. code-block:: yaml
 
-    # src/Mongator/MongatorUserBundle/Resources/config/mandango/schema.yml
+    # src/Mongator/MongatorUserBundle/Resources/config/mongator/schema.yml
     Model\MongatorUserBundle\User:
         fields:
             username: string
@@ -46,10 +46,10 @@ a bundle class before of the base class to be able to custom them in the bundles
         Mongator\MongatorUserBundle\Model\User:
             Model\MongatorUserBundle\Base\User
 
-To generate the classes is used the *mandango:generate* command:
+To generate the classes is used the *mongator:generate* command:
 
 .. code-block:: bash
 
-    php app/console mandango:generate
+    php app/console mongator:generate
 
 .. _YAML: http://www.yaml.org

@@ -35,7 +35,7 @@ Usage
 
 ::
 
-    $article = $mandango->create('Model\Article')->setTitle('Mongator')->save();
+    $article = $mongator->create('Model\Article')->setTitle('Mongator')->save();
 
     echo $article->getCreatedFrom(); // 127.0.0.1
     echo $article->getUpdatedFrom(); // null

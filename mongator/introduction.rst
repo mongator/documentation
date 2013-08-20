@@ -90,7 +90,7 @@ More information in the [Mongator installation page].
 
 
 [NOSQL]: http://en.wikipedia.org/wiki/NoSQL
-[performance comparison]: http://mandango.org/performance
+[performance comparison]: http://mongator.org/performance
 [http://www.mongodb.org]: http://www.mongodb.org
 [references and embeds]: http://www.mongodb.org/display/DOCS/Schema+Design#SchemaDesign-Embedvs.Reference
 [indexes]: http://www.mongodb.org/display/DOCS/Indexes
@@ -100,4 +100,4 @@ More information in the [Mongator installation page].
 [PHPUnit]: http://www.phpunit.de
 [object oriented PHP]: http://www.php.net/manual/en/language.oop5.php
 [Mongo]: http://www.mongodb.org/display/DOCS/Tutorial
-[Mongator installation page]: http://mandango.org/installation
+[Mongator installation page]: http://mongator.org/installation

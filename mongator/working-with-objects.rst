@@ -1,10 +1,10 @@
 Working with documents
 ======================
 
-You have to create the documents through the ``create`` method of the mandango,
+You have to create the documents through the ``create`` method of the mongator,
 passing it the document class::
 
-    $article = $mandango->create('Model\Article');
+    $article = $mongator->create('Model\Article');
 
 Mongator uses setters and getters to modify and access to the document's data.
 
@@ -21,8 +21,8 @@ can choose the arguments, and pass them as an array creating the documents::
     }
 
     // creating the document
-    $author = $mandango->create('Model\Author');
-    $article = $mandango->create('Model\Article', array($author));
+    $author = $mongator->create('Model\Author');
+    $article = $mongator->create('Model\Article', array($author));
 
 Identifier
 ----------
@@ -60,7 +60,7 @@ One
 To assign references to one you simply have to assign the referenced document
 to the reference's setter::
 
-    $author = $mandango->create('Mongator\Author');
+    $author = $mongator->create('Mongator\Author');
     $author->setName('pablodip');
 
     $article->setAuthor($author);
@@ -203,23 +203,23 @@ To save and delete Mongator documents you can use the methods
 Fluent interface
 ----------------
 
-A fluent interface is implemented in the mandango documents to be able to work
+A fluent interface is implemented in the mongator documents to be able to work
 easily with them::
 
-    $author = $mandango->create('Model\Author');
+    $author = $mongator->create('Model\Author');
     $author->setName('pablodip');
     $author->save();
 
-    $article = $mandango->create('Model\Article');
+    $article = $mongator->create('Model\Article');
     $article->setAuthor($author);
     $article->setTitle($title);
     $article->setContent($content);
     $article->save();
 
     // fluent interface
-    $author = $mandango->create('Model\Author')->setName('pablodip')->save();
+    $author = $mongator->create('Model\Author')->setName('pablodip')->save();
 
-    $article = $mandango->create('Model\Article')
+    $article = $mongator->create('Model\Article')
         ->setAuthor($author)
         ->setTitle($title)
         ->setContent($content)

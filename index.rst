@@ -6,21 +6,21 @@ The easy, powerful and ultrafast ODM for PHP and MongoDB.
 .. toctree::
    :maxdepth: 1
 
-   mandango/index
+   mongator/index
 
 Bundle to use Mongator with Symfony2.
 
 .. toctree::
    :maxdepth: 1
 
-   mandango-bundle/index
+   mongator-bundle/index
 
 Official Mongator's behaviors.
 
 .. toctree::
   :maxdepth: 1
 
-  mandango-behaviors/index
+  mongator-behaviors/index
 
 Mondator
 --------

@@ -34,16 +34,16 @@ Usage
 
 ::
 
-    $article = $mandango->create('Model\Article')
+    $article = $mongator->create('Model\Article')
         ->setTitle('Mongator is ultrafast!')
         ->save()
     ;
 
-    echo $article->getSlug(); // mandango-is-ultrafast
+    echo $article->getSlug(); // mongator-is-ultrafast
 
-    $article2 = $mandango->create('Model\Article')
+    $article2 = $mongator->create('Model\Article')
         ->setTitle('Mongator is ultrafast!')
         ->save()
     ;
 
-    echo $article2->getSlug(); // mandango-is-ultrafast-2
+    echo $article2->getSlug(); // mongator-is-ultrafast-2

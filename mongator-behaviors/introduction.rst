@@ -21,14 +21,14 @@ You can download directly from tar_ or zip_.
 Git
 ^^^
 
-http://github.com/mandango/mandango-behaviors
+http://github.com/mongator/mongator-behaviors
 
 Subversion
 ^^^^^^^^^^
 
 There is an access through Subversion to the Git repository.
 
-http://svn.github.com/mandango/mandango-behaviors
+http://svn.github.com/mongator/mongator-behaviors
 
 Configuration
 -------------
@@ -39,10 +39,10 @@ To use these behaviors you just have to add their namespace to the class loader:
 
     $loader = new UniversalClassLoader();
     $loader->registerNamespaces(array(
-        'Mongator\Behavior' => '/path/to/mandango-behaviors/src',
-        'Mongator'          => '/path/to/mandango/src',
+        'Mongator\Behavior' => '/path/to/mongator-behaviors/src',
+        'Mongator'          => '/path/to/mongator/src',
     ));
     $loader->register();
 
-.. _tar: http://github.com/mandango/mandango-behaviors/tarball/master
-.. _zip: http://github.com/mandango/mandango-behaviors/zipball/master
+.. _tar: http://github.com/mongator/mongator-behaviors/tarball/master
+.. _zip: http://github.com/mongator/mongator-behaviors/zipball/master

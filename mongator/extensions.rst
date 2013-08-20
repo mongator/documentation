@@ -18,7 +18,7 @@ Adding the extension to mondator::
 
 Using the extension::
 
-    $article = $mandango->create('Model\Article');
+    $article = $mongator->create('Model\Article');
     $article['title'] = 'Mongator rocks!';
 
     echo $article['title']; // Mongator rocks!
@@ -35,7 +35,7 @@ Adding the extension to mondator::
 
 Using the extension::
 
-    $article = $mandango->create('Model\Article');
+    $article = $mongator->create('Model\Article');
     $article->title = 'Mongator rocks!';
 
     echo $article->title; // Mongator rocks!
@@ -43,7 +43,7 @@ Using the extension::
 Creating extensions
 -------------------
 
-The mandango extensions are mondator extensions, so to create extensions you
+The mongator extensions are mondator extensions, so to create extensions you
 must know how to create mondator extensions. That's why I recommend you to
 read the :doc:`Mondator documentation </mondator/index>` if you haven't done it
 yet.

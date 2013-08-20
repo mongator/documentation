@@ -37,4 +37,4 @@ And generate the classes:
 
 .. code-block:: bash
 
-    php app/console mandango:generate
+    php app/console mongator:generate

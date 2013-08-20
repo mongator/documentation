@@ -61,8 +61,8 @@ Synchronizing
     $articleRepository->ensureIndexes();
     $authorRepository->ensureIndexes();
 
-All at once through the mandango::
+All at once through the mongator::
 
-    $mandango->ensureIndexes();
+    $mongator->ensureIndexes();
 
 .. _Mongo documentation about indexes: http://www.mongodb.org/display/DOCS/Indexes

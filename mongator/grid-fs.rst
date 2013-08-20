@@ -18,7 +18,7 @@ For it you have to map them as files::
 When doing it the field ``file`` is automatically added, that is the one
 in which the file is saved::
 
-    $image = $mandango->create('Model\Image');
+    $image = $mongator->create('Model\Image');
 
     // as file
     $image->setFile('/path/to/file');

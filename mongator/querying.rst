@@ -151,10 +151,10 @@ The generated query classes are a good place to save logic for reuse::
 References many
 ---------------
 
-Please, remember how :doc:`references many work </mandango/working-with-objects>`.
+Please, remember how :doc:`references many work </mongator/working-with-objects>`.
 
 The ``Mongator\\ReferenceGroup`` class has a ``createQuery`` method that just returns a
-query object to query the referenced documents. So, as the mandango query class
+query object to query the referenced documents. So, as the mongator query class
 is awesome, you can also make awesome stuff with it::
 
     // query and returns all categories

@@ -82,18 +82,18 @@ A full example
 
 Let's see a full example, which you can use to start using Mongator::
 
-    $mandangoDir = '/path/to/mandango';
+    $mongatorDir = '/path/to/mongator';
     $modelDir  = '/path/to/Model';
 
     // classes loader
-    require_once($mandangoDir.'/vendor/symfony/src/Symony/Component/ClassLoader/UniversalClassLoader.php');
+    require_once($mongatorDir.'/vendor/symfony/src/Symony/Component/ClassLoader/UniversalClassLoader.php');
 
     use Symfony\Component\ClassLoader\UniversalClassLoader;
 
     $loader = new UniversalClassLoader();
     $loader->registerNamespaces(array(
-        'Mongator' => $mandangoDir.'/src/',
-        'Mondator' => $mandangoDir.'/vendor/mondator/src',
+        'Mongator' => $mongatorDir.'/src/',
+        'Mondator' => $mongatorDir.'/vendor/mondator/src',
         'Model'    => dirname($modelDir),
     ));
     $loader->register();

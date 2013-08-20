@@ -3,19 +3,19 @@ Using
 
 You can use Mongator in a normal way.
 
-You can access to the mandango in the container::
+You can access to the mongator in the container::
 
-    $mandango = $container->get('mandango');
+    $mongator = $container->get('mongator');
 
-The mandango is initialized also automatically (in a lazy way) if you use some
+The mongator is initialized also automatically (in a lazy way) if you use some
 functionality in the documents that require it::
 
     // creating
-    $article = $mandango->create('Model\Article');
+    $article = $mongator->create('Model\Article');
     $article->setTitle($title);
     $article->save();
 
     // quering
-    $articles = $mandango->getRepository('Model\Article')->createQuery();
+    $articles = $mongator->getRepository('Model\Article')->createQuery();
 
     // ...

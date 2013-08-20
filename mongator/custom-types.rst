@@ -3,12 +3,12 @@ Custom types
 
 You can use custom types to accomplish the mapping of documents.
 
-To do that you have to create a mandango type and add it to the mandango types' container.
+To do that you have to create a mongator type and add it to the mongator types' container.
 
 Creating custom types
 ---------------------
 
-A mandango type is a class that inherits from ``Mongator\Type\Type`` and
+A mongator type is a class that inherits from ``Mongator\Type\Type`` and
 implements its four abstract methods.
 
 Let's see an example::
@@ -51,7 +51,7 @@ Let's see an example::
 Mongator types' container
 -------------------------
 
-Once you have the type you just have to add it to the mandango types' container,
+Once you have the type you just have to add it to the mongator types' container,
 in order to be able to use it::
 
     use Mongator\Type\Container;

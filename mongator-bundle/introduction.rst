@@ -10,14 +10,14 @@ Add Mongator and Mondator to your vendors:
 
 .. code-block:: bash
 
-    git submodule add git://github.com/mandango/mandango vendor/mandango
-    git submodule add git://github.com/mandango/mondator vendor/mondator
+    git submodule add git://github.com/mongator/mongator vendor/mongator
+    git submodule add git://github.com/mongator/mondator vendor/mondator
 
 Add the MongatorBundle:
 
 .. code-block:: bash
 
-    git submodule add git://github.com/mandango/MongatorBundle vendor/bundles/Mongator/MongatorBundle
+    git submodule add git://github.com/mongator/MongatorBundle vendor/bundles/Mongator/MongatorBundle
 
 Add all of them and the Model namespace to your autoload::
 
@@ -26,7 +26,7 @@ Add all of them and the Model namespace to your autoload::
         // ...
         'Mongator\MongatorBundle' => __DIR__.'/../vendor/bundles',
         'Mongator\Mondator'       => __DIR__.'/../vendor/mondator/src',
-        'Mongator'                => __DIR__.'/../vendor/mandango/src',
+        'Mongator'                => __DIR__.'/../vendor/mongator/src',
         'Model'                   => __DIR__.'/../src/',
         // ...
     ));
@@ -51,7 +51,7 @@ Add Mongator to your configuration:
 .. code-block:: yaml
 
     # app/config/config.yml
-    mandango:
+    mongator:
         default_connection: local
         connections:
             local:
@@ -63,7 +63,7 @@ Activate the profiler in the developing environment:
 .. code-block:: yaml
 
     # app/config/config_dev.yml
-    mandango:
+    mongator:
         logging: true
 
 .. _Symfony2: http://www.symfony.com

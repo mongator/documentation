@@ -7,12 +7,12 @@ Mongator implements the `Unit Of Work`_ pattern, which simply means
 Let's see an example::
 
     // prepare database operations
-    $author = $mandango->create('Model\Author')->setName('pablodip');
-    $mandango->persist($author);
+    $author = $mongator->create('Model\Author')->setName('pablodip');
+    $mongator->persist($author);
 
-    $category1 = $mandango->create('Model\Category')->setName('MongoDB');
-    $category2 = $mandango->create('Model\Category')->setName('PHP');
-    $mandango->persist(array($category1, $category2));
+    $category1 = $mongator->create('Model\Category')->setName('MongoDB');
+    $category2 = $mongator->create('Model\Category')->setName('PHP');
+    $mongator->persist(array($category1, $category2));
 
     $article = $articleRepository->createQuery(array('name' => 'Mondongo'))->one();
     $article
@@ -20,13 +20,13 @@ Let's see an example::
         ->setAuthor($author)
         ->addCategories(array($category1, $category2))
     ;
-    $mandango->persist($article);
+    $mongator->persist($article);
 
     $articles = $articleRepository->createQuery(array('type' => 'foo'))->all();
-    $mandango->remove($articles);
+    $mongator->remove($articles);
 
     // send all database operations at once
-    $mandango->flush();
+    $mongator->flush();
 
 Like you can see this is a really powerful way to work, because you can
 prepare all the database operations, and when all of them are ready, you

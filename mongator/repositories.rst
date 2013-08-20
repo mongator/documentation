@@ -3,10 +3,10 @@ Repositories
 
 The repositories perform general functions of documents.
 
-They are obtained through the ``getRepository`` method of the mandango::
+They are obtained through the ``getRepository`` method of the mongator::
 
-    $articleRepository = $mandango->getRepository('Model\Article');
-    $authorRepository = $mandango->getRepository('Model\Author');
+    $articleRepository = $mongator->getRepository('Model\Article');
+    $authorRepository = $mongator->getRepository('Model\Author');
 
 .. note::
   The embedded documents don't have repositories.
@@ -125,7 +125,7 @@ The repositories have the ``mapReduce`` method to execute map reduces commands e
 Connection
 ----------
 
-You can get the mandango connection of the documents from the repository
+You can get the mongator connection of the documents from the repository
 through the ``->getConnection()`` method::
 
     $connection = $articleRepository->getConnection();
