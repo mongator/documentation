@@ -1,7 +1,7 @@
 Forms
 =====
 
-The MandangoBundle is integrated with the new Symfony2 Forms::
+The MongatorBundle is integrated with the new Symfony2 Forms::
 
     class PostType extends AbstractType
     {

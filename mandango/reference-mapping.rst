@@ -3,7 +3,7 @@ Reference Mapping
 
 References are relations to other documents. MongoDB doesn't
 allow joins or foreign keys, nut you can save references to other documents
-and later consult them. Mandango allows you to do this very easily.
+and later consult them. Mongator allows you to do this very easily.
 
 You just have to indicate the name of the reference and the document class you want
 to reference.

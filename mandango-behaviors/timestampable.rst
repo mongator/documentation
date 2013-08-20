@@ -16,7 +16,7 @@ Configuration
                 'content' => 'string',
             ),
             'behaviors' => array(
-                array('class' => 'Mandango\Behavior\Timestampable'),
+                array('class' => 'Mongator\Behavior\Timestampable'),
             ),
         ),
     );
@@ -34,7 +34,7 @@ Usage
 
 ::
 
-    $article = $mandango->create('Model\Article')->setTitle('Mandango')->save();
+    $article = $mandango->create('Model\Article')->setTitle('Mongator')->save();
 
     echo $article->getCreatedAt(); // new \DateTime('now')
     echo $article->getUpdatedAt(); // null

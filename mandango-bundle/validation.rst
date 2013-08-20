@@ -1,7 +1,7 @@
 Validation
 ==========
 
-To define the validation of your Mandango's documents you can use the config classes:
+To define the validation of your Mongator's documents you can use the config classes:
 
 .. code-block:: yaml
 
@@ -21,9 +21,9 @@ To define the validation of your Mandango's documents you can use the config cla
             publishedAt: { type: date, validation: [DateTime: ~] }
             isActive:    { type: boolean, default: false, validation: [Type: boolean] }
         referencesOne:
-            author: { class: Model\PablodipMandangoBlogBundle\Author, validation: [NotNull: ~]  }
+            author: { class: Model\PablodipMongatorBlogBundle\Author, validation: [NotNull: ~]  }
         referencesMany:
-            categories: { class: Model\PablodipMandangoBlogBundle\Category }
+            categories: { class: Model\PablodipMongatorBlogBundle\Category }
         embeddedsOne:
             source: { class: Model\Source, validation: [NotNull: ~] }
 

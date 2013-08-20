@@ -1,12 +1,12 @@
 Behaviors
 =========
 
-The behaviors are one of the best things of Mandango. They are just extensions,
+The behaviors are one of the best things of Mongator. They are just extensions,
 but to be used in classes **independently** instead in all the document classes,
 which is a great advantage.
 
 What can a behavior do? All that an extension can, but translated to the
-Mandango's language:
+Mongator's language:
 
 .. hint::
   * Change (add/edit/remove) config classes (mapping):
@@ -39,10 +39,10 @@ the options if they exist::
             // ...
             'behaviors' => array(
                 // simple
-                array('class' => 'Mandango\Behavior\Timestampable'),
+                array('class' => 'Mongator\Behavior\Timestampable'),
                 // with options
                 array(
-                    'class' => 'Mandango\Behavior\Sluggable',
+                    'class' => 'Mongator\Behavior\Sluggable',
                     'options' => array('fieldFrom' => 'title'),
                 ),
             ),
@@ -55,11 +55,11 @@ By default
 If you want to use any behavior by default in all document classes, you can
 define it in the Core extension options::
 
-    $extensions[] = new \Mandango\Extension\Core(array(
+    $extensions[] = new \Mongator\Extension\Core(array(
         // ...
         'default_behaviors' => array(
             array(
-                'class' => 'Mandango\Behavior\Timestampable',
+                'class' => 'Mongator\Behavior\Timestampable',
                 'options' => array('updatedEnabled' => false),
             )),
         ),
@@ -67,12 +67,12 @@ define it in the Core extension options::
 
 And if you want to use any of them only in the main documents::
 
-    $extensions[] = new \Mandango\Extension\Core(array(
+    $extensions[] = new \Mongator\Extension\Core(array(
         // ...
         'default_behaviors' => array(
             array(
                 'in_embeddeds' => false,
-                'class' => 'Mandango\Behavior\Timestampable',
+                'class' => 'Mongator\Behavior\Timestampable',
                 'options' => array('updatedEnabled' => false),
             )),
         ),
@@ -83,11 +83,11 @@ Creating behaviors
 
 Let's see the Timestampable behabior::
 
-    namespace Mandango\Behavior;
+    namespace Mongator\Behavior;
 
-    use Mandango\Inflector;
-    use Mandango\Mondator\ClassExtension;
-    use Mandango\Mondator\Definition\Method;
+    use Mongator\Inflector;
+    use Mongator\Mondator\ClassExtension;
+    use Mongator\Mondator\Definition\Method;
 
     /**
      * Timestampable.

@@ -1,4 +1,4 @@
-MandangoBundle
+MongatorBundle
 ==============
 
 .. toctree::

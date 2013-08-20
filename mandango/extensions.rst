@@ -4,7 +4,7 @@ Extensions
 The extensions allow you to add functionalities to documents, repositories,
 queries, in an **extremely flexible** way. It is also very amusing and easy.
 
-Mandango carries by default with some extensions apart from the Core one.
+Mongator carries by default with some extensions apart from the Core one.
 
 DocumentArrayAccess
 -------------------
@@ -14,14 +14,14 @@ documents.
 
 Adding the extension to mondator::
 
-    $extensions[] = new \Mandango\Extension\DocummentArrayAccess();
+    $extensions[] = new \Mongator\Extension\DocummentArrayAccess();
 
 Using the extension::
 
     $article = $mandango->create('Model\Article');
-    $article['title'] = 'Mandango rocks!';
+    $article['title'] = 'Mongator rocks!';
 
-    echo $article['title']; // Mandango rocks!
+    echo $article['title']; // Mongator rocks!
 
 DocumentPropertyOverloading
 ---------------------------
@@ -31,14 +31,14 @@ documents by **overload**.
 
 Adding the extension to mondator::
 
-    $extensions[] = new \Mandango\Extension\DocummentPropertyOverloading();
+    $extensions[] = new \Mongator\Extension\DocummentPropertyOverloading();
 
 Using the extension::
 
     $article = $mandango->create('Model\Article');
-    $article->title = 'Mandango rocks!';
+    $article->title = 'Mongator rocks!';
 
-    echo $article->title; // Mandango rocks!
+    echo $article->title; // Mongator rocks!
 
 Creating extensions
 -------------------

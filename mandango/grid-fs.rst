@@ -1,7 +1,7 @@
 GridFS
 ======
 
-With Mandango you will be able to store files in Mongo using GridFS_ through
+With Mongator you will be able to store files in Mongo using GridFS_ through
 MongoGridFS_ objects of the PHP driver very easily.
 
 For it you have to map them as files::

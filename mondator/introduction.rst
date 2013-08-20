@@ -39,7 +39,7 @@ To use Mondator you just have to add it namespace to a class loader::
 
     $loader = new UniversalClassLoader();
     $loader->registerNamespaces(array(
-        'Mandango\Mondator' => '/path/to/mondator/src',
+        'Mongator\Mondator' => '/path/to/mondator/src',
     ));
     $loader->register();
 

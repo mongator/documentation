@@ -1,13 +1,13 @@
 Querying
 ========
 
-The queries are made in Mandango through the document query classes,
-which inherit from the ``Mandango\Query`` class, which is awesome.
+The queries are made in Mongator through the document query classes,
+which inherit from the ``Mongator\Query`` class, which is awesome.
 
 The philosophy is simple: be as fast (lazy) and easy (human friendly) as
 possible, and the results are incredible.
 
-The ``Mandango\Query`` class uses the mongo query syntax, so you don't have to learn
+The ``Mongator\Query`` class uses the mongo query syntax, so you don't have to learn
 a new language to start to use it, although you can of course add much more
 cool stuff on the top of it.
 
@@ -29,7 +29,7 @@ Let's see how it works::
         ->snapshot(true)
         ->timeout(100)
 
-        ->references() // Mandango's extra
+        ->references() // Mongator's extra
     ;
 
     // the real query is only executed in these cases
@@ -45,10 +45,10 @@ Let's see how it works::
 References
 ----------
 
-MongoDB does not have joins, but Mandango has the best and most efficient way
+MongoDB does not have joins, but Mongator has the best and most efficient way
 to solve this feature. Usually when you access to a reference, the reference is
 queried, so if you have to access to several references, you have to make
-several queries. What does Mandango do? Simply to group the references queries
+several queries. What does Mongator do? Simply to group the references queries
 in only one query::
 
     // queries articles
@@ -129,7 +129,7 @@ References many
 
 Please, remember how :doc:`references many work </mandango/working-with-objects>`.
 
-The ``Mandango\\ReferenceGroup`` class has a ``createQuery`` method that just returns a
+The ``Mongator\\ReferenceGroup`` class has a ``createQuery`` method that just returns a
 query object to query the referenced documents. So, as the mandango query class
 is awesome, you can also make awesome stuff with it::
 

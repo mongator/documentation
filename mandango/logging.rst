@@ -1,16 +1,16 @@
 Logging
 =======
 
-With Mandango you can log the queries that are sent to Mongo to improve the development.
+With Mongator you can log the queries that are sent to Mongo to improve the development.
 
 To do it you just have to pass a *PHP callable* to the mandango when you create it::
 
-    use Mandango\Mandango;
+    use Mongator\Mongator;
 
     $logger = function(array $log) {
         print_r($log);
     }
-    $mandango = new Mandango($metadata, $queryCache, $logger);
+    $mandango = new Mongator($metadata, $queryCache, $logger);
 
 ..  note::
   This functionality doesn't have **any penalty in performance** in production,

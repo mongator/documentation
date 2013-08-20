@@ -16,7 +16,7 @@ Configuration
                 'content' => 'string',
             ),
             'behaviors' => array(
-                array('class' => 'Mandango\Behavior\Ipable'),
+                array('class' => 'Mongator\Behavior\Ipable'),
             ),
         ),
     );
@@ -28,14 +28,14 @@ Configuration
   * **createdField**: field used to store the IP from where documents are created (*created_from* by default)
   * **updatedEnabled**: if saving or not the IP from where documents are updated (enabled by default)
   * **updatedField**: field used to store the IP from where documents are updated (*updated_from* by default)
-  * **getIpCallable**: callable that returns the IP to save (*Mandango\Behavior\Util\IpableUtil::getIp()* by default)
+  * **getIpCallable**: callable that returns the IP to save (*Mongator\Behavior\Util\IpableUtil::getIp()* by default)
 
 Usage
 -----
 
 ::
 
-    $article = $mandango->create('Model\Article')->setTitle('Mandango')->save();
+    $article = $mandango->create('Model\Article')->setTitle('Mongator')->save();
 
     echo $article->getCreatedFrom(); // 127.0.0.1
     echo $article->getUpdatedFrom(); // null

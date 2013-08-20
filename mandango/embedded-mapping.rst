@@ -56,4 +56,4 @@ Embeddeds Many
     );
 
 .. tip::
-  Mandango can work with deep embedded documents, that is, embed inside the embeddeds.
+  Mongator can work with deep embedded documents, that is, embed inside the embeddeds.

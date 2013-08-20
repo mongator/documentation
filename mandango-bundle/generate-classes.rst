@@ -26,8 +26,8 @@ In the bundles is necessary to use the bundle name to separate the classes by bu
 
 .. code-block:: yaml
 
-    # src/Mandango/MandangoUserBundle/Resources/config/mandango/schema.yml
-    Model\MandangoUserBundle\User:
+    # src/Mongator/MongatorUserBundle/Resources/config/mandango/schema.yml
+    Model\MongatorUserBundle\User:
         fields:
             username: string
             password: string
@@ -42,9 +42,9 @@ a bundle class before of the base class to be able to custom them in the bundles
         Model\Base\Article
 
     # bundle class
-    Model\MandangoUserBundle\User:
-        Mandango\MandangoUserBundle\Model\User:
-            Model\MandangoUserBundle\Base\User
+    Model\MongatorUserBundle\User:
+        Mongator\MongatorUserBundle\Model\User:
+            Model\MongatorUserBundle\Base\User
 
 To generate the classes is used the *mandango:generate* command:
 

@@ -1,7 +1,7 @@
 Using
 =====
 
-You can use Mandango in a normal way.
+You can use Mongator in a normal way.
 
 You can access to the mandango in the container::
 

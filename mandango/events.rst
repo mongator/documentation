@@ -1,7 +1,7 @@
 Events
 =======
 
-Mandango provides to execute methods in the documents before and after
+Mongator provides to execute methods in the documents before and after
 performing certain actions:
 
 .. hint::

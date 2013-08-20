@@ -25,7 +25,7 @@ default connection of the mandango will be used::
 
 .. note:
   To specify the connections it is used the connection names that
-  are assigned to the Mandango.
+  are assigned to the Mongator.
 
 Collection
 ----------
@@ -47,7 +47,7 @@ that::
 Types
 -----
 
-Mandango has types to allow map data between PHP and Mongo.
+Mongator has types to allow map data between PHP and Mongo.
 
 * **bin_data**
 * **boolean**
@@ -107,12 +107,12 @@ can use a different field name in PHP and Mongo::
         ),
     );
 
-These are the options the Mandango's Core extension accepts, but you can use
+These are the options the Mongator's Core extension accepts, but you can use
 more options depending on the extensions you use.
 
 .. note::
   You can define as fields as you want to take advantage of the Mongo free
-  schema. Mandango has been designed thinking in that, and to define lots
+  schema. Mongator has been designed thinking in that, and to define lots
   of fields is not a performance problem.
 
 .. _CamelCase: http://en.wikipedia.org/wiki/CamelCase

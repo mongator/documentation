@@ -1,7 +1,7 @@
 Query Cache
 ===========
 
-The Mandango's Query Cache is one of the most impressive features of Mandango,
+The Mongator's Query Cache is one of the most impressive features of Mongator,
 because it multiplies the speed of your application and database.
 
 If we see the optimization page in the MongoDB documentation, we can see that
@@ -26,7 +26,7 @@ What happen when you query an user with 100 fields? Usually your library queries
 the full user to the database and then you have the full user. So you query
 the full even if you are going to work only with few of its fields.
 
-What does Mandango do? Mandango saves automatically the fields you use in each
+What does Mongator do? Mongator saves automatically the fields you use in each
 query and it queries only those fields::
 
     // first time
@@ -114,7 +114,7 @@ A normal use case is to take data from references::
 References
 ^^^^^^^^^^
 
-The Query Cache works also with the Mandango's references query, which is great.
+The Query Cache works also with the Mongator's references query, which is great.
 This is done automatically when you access to a reference::
 
     $articles = $articleRepository->createQuery()/*->references('author)*/->all();
@@ -127,6 +127,6 @@ Conclusion
 
 Like you have seen, this is indeed a really good feature for your
 application's performance, and you even don't need to do anything apart from
-use Mandango :)
+use Mongator :)
 
 .. _querying only the data you use: http://www.mongodb.org/display/DOCS/Optimization#Optimization-Optimization%233%3ASelectonlyrelevantfields

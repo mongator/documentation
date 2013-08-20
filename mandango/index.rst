@@ -1,4 +1,4 @@
-Mandango
+Mongator
 ========
 
 .. toctree::

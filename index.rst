@@ -1,4 +1,4 @@
-Mandango
+Mongator
 --------
 
 The easy, powerful and ultrafast ODM for PHP and MongoDB.
@@ -8,14 +8,14 @@ The easy, powerful and ultrafast ODM for PHP and MongoDB.
 
    mandango/index
 
-Bundle to use Mandango with Symfony2.
+Bundle to use Mongator with Symfony2.
 
 .. toctree::
    :maxdepth: 1
 
    mandango-bundle/index
 
-Official Mandango's behaviors.
+Official Mongator's behaviors.
 
 .. toctree::
   :maxdepth: 1

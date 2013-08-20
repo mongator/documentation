@@ -9,10 +9,10 @@ Definitions with Outputs
 ------------------------
 
 Each definition must be an output. For this it is used the
-*Mandango\Mondator\Definition* class instead::
+*Mongator\Mondator\Definition* class instead::
 
-    use Mandango\Mondator\Definition;
-    use Mandango\Mondator\Output;
+    use Mongator\Mondator\Definition;
+    use Mongator\Mondator\Output;
 
     $output = new Output($modeldir);
     $definition = new Definition($class, $output);
@@ -23,7 +23,7 @@ Each definition must be an output. For this it is used the
 Creating Extensions
 -------------------
 
-The extensions are classes that inherit from *Mandango\Mondator\Extension* and
+The extensions are classes that inherit from *Mongator\Mondator\Extension* and
 implement the protected *->doClassProcess()* method.
 
 The *->doClassProcess()* method is the place where the config classes
@@ -58,12 +58,12 @@ setters and getters of the fields that have class configurations::
 
     namespace MyProject\Extension;
 
-    use Mandango\Mondator\Definition;
-    use Mandango\Mondator\Definition\Property;
-    use Mandango\Mondator\Definition\Method;
-    use Mandango\Mondator\Extension;
-    use Mandango\Mondator\Output;
-    use Mandango\Inflector;
+    use Mongator\Mondator\Definition;
+    use Mongator\Mondator\Definition\Property;
+    use Mongator\Mondator\Definition\Method;
+    use Mongator\Mondator\Extension;
+    use Mongator\Mondator\Output;
+    use Mongator\Inflector;
 
     class DocumentExtension extends Extension
     {

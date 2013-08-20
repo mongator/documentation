@@ -23,7 +23,7 @@ documents by id::
     // several
     $articles = $articleRepository->findById(array($id1, $id2, $id3));
 
-Mandango implements the IdentityMap_ pattern, so when you find a document
+Mongator implements the IdentityMap_ pattern, so when you find a document
 and the document has been found already, the same document is returned.
 
 .. note::

@@ -1,4 +1,4 @@
-Mandango Behaviors
+Mongator Behaviors
 ==================
 
 .. toctree::

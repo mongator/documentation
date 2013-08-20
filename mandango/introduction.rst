@@ -1,7 +1,7 @@
 Introduction
 ============
 
-Mandango is an easy, poweful and ultrafast *Object Document Mapper* (ODM) for
+Mongator is an easy, poweful and ultrafast *Object Document Mapper* (ODM) for
 PHP and MongoDB.
 
 What is MongoDB?
@@ -43,29 +43,29 @@ your applications are running as soon as it is possible, because it isn't
 worthwhile to spend a lot of time finishing a superfast application if when it
 is going to be in production it can't compete or it's unmaintainable.
 
-Why Mandango?
+Why Mongator?
 ------------------
 
-Mandango is to the ODMs what Mongo is to databases.
+Mongator is to the ODMs what Mongo is to databases.
 
-* **Simple**: Mandango is developed in a simple way. This makes it very easy to learn, use, and avoid bugs.
-* **Powerful**: Mandango is very flexible thanks to Mondator, so you'll be able to use it to develop any type of application.
-* **Ultrafast**: Mandango has been designed to be extremely light in memory consumption and processing cost.
+* **Simple**: Mongator is developed in a simple way. This makes it very easy to learn, use, and avoid bugs.
+* **Powerful**: Mongator is very flexible thanks to Mondator, so you'll be able to use it to develop any type of application.
+* **Ultrafast**: Mongator has been designed to be extremely light in memory consumption and processing cost.
 
 ¿Aren't you convinced yet? Let me show you a few more features:
 
-* **References and Embeds**: Mandango allows you to work with [references and embeds] very easily.
-* **Extensions**: Mandango can be customized infinitely with Mondator Extensions.
-* **Indexes**: Mandango allows you to work easily with the [indexes] of the collections.
-* **Events**: Mandango throws _hooks_ before and after inserting, updating, saving and deleting documents.
-* **GridFS**: Mandango allows to save files of any size using [GridFS].
-* **Log**: Mandango allows to save logs of the queries to improve the development.
-* **batchInsert**: Mandango uses [batchInsert] to insert documents in an efficient way.
-* **Atomic Operations**: Mandango uses [atomic operations] to update and delete documents efficiently.
-* **Integratión with IDEs**: Mandango uses generated code, so you may integrate it with your IDE.
-* **Tested**: Mandango is completely tested with automated test with [PHPUnit].
+* **References and Embeds**: Mongator allows you to work with [references and embeds] very easily.
+* **Extensions**: Mongator can be customized infinitely with Mondator Extensions.
+* **Indexes**: Mongator allows you to work easily with the [indexes] of the collections.
+* **Events**: Mongator throws _hooks_ before and after inserting, updating, saving and deleting documents.
+* **GridFS**: Mongator allows to save files of any size using [GridFS].
+* **Log**: Mongator allows to save logs of the queries to improve the development.
+* **batchInsert**: Mongator uses [batchInsert] to insert documents in an efficient way.
+* **Atomic Operations**: Mongator uses [atomic operations] to update and delete documents efficiently.
+* **Integratión with IDEs**: Mongator uses generated code, so you may integrate it with your IDE.
+* **Tested**: Mongator is completely tested with automated test with [PHPUnit].
 
-> Mandango is **the fastest mapper** in PHP by far.
+> Mongator is **the fastest mapper** in PHP by far.
 > More information in the [performance comparison].
 
 Requirements
@@ -73,20 +73,20 @@ Requirements
 
 ### From your computer
 
-Mandango requires PHP 5.3.0 or greater, and of course MongoDB and the PHP
+Mongator requires PHP 5.3.0 or greater, and of course MongoDB and the PHP
 driver for MongoDB (1.0.11 or greater).
 
 ### From you
 
-Mandango uses [object oriented PHP] and [Mongo], so if you want to start using it
+Mongator uses [object oriented PHP] and [Mongo], so if you want to start using it
 you should know both things minimally at least.
 
 Instalation
 -----------
 
-You can install Mandango downloading it directly, by git, svn.
+You can install Mongator downloading it directly, by git, svn.
 
-More information in the [Mandango installation page].
+More information in the [Mongator installation page].
 
 
 [NOSQL]: http://en.wikipedia.org/wiki/NoSQL
@@ -100,4 +100,4 @@ More information in the [Mandango installation page].
 [PHPUnit]: http://www.phpunit.de
 [object oriented PHP]: http://www.php.net/manual/en/language.oop5.php
 [Mongo]: http://www.mongodb.org/display/DOCS/Tutorial
-[Mandango installation page]: http://mandango.org/installation
+[Mongator installation page]: http://mandango.org/installation

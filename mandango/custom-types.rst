@@ -8,14 +8,14 @@ To do that you have to create a mandango type and add it to the mandango types' 
 Creating custom types
 ---------------------
 
-A mandango type is a class that inherits from ``Mandango\Type\Type`` and
+A mandango type is a class that inherits from ``Mongator\Type\Type`` and
 implements its four abstract methods.
 
 Let's see an example::
 
     namespace MyProject\Type;
 
-    use Mandango\Type\Type;
+    use Mongator\Type\Type;
 
     class MyType extends Type
     {
@@ -48,13 +48,13 @@ Let's see an example::
   * ``toMongoInString``: convert a PHP value to Mongo in string (to generate the classes)
   * ``toPHPInString``: convert a Mongo value to PHP in string (to generate the classes)
 
-Mandango types' container
+Mongator types' container
 -------------------------
 
 Once you have the type you just have to add it to the mandango types' container,
 in order to be able to use it::
 
-    use Mandango\Type\Container;
+    use Mongator\Type\Container;
 
     Container::addType('my_type', 'MyProject\Type\MyType');
 

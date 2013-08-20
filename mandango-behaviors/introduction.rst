@@ -1,7 +1,7 @@
 Introduction
 ============
 
-These are the official behaviors of Mandango.
+These are the official behaviors of Mongator.
 
 .. hint::
   * **Timestampable**: saves the creation and/or update date in the documents
@@ -39,8 +39,8 @@ To use these behaviors you just have to add their namespace to the class loader:
 
     $loader = new UniversalClassLoader();
     $loader->registerNamespaces(array(
-        'Mandango\Behavior' => '/path/to/mandango-behaviors/src',
-        'Mandango'          => '/path/to/mandango/src',
+        'Mongator\Behavior' => '/path/to/mandango-behaviors/src',
+        'Mongator'          => '/path/to/mandango/src',
     ));
     $loader->register();
 

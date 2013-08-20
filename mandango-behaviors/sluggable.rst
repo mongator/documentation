@@ -15,7 +15,7 @@ Configuration
                 'content' => 'string',
             ),
             'extensions' => array(
-                array('class' => 'Mandango\Behavior\Sluggable', 'options' => array('fromField' => 'title')),
+                array('class' => 'Mongator\Behavior\Sluggable', 'options' => array('fromField' => 'title')),
             ),
         ),
     );
@@ -27,7 +27,7 @@ Configuration
   * **slugField**: field used to store the slug (*slug* by default)
   * **unique**: if the slugs have to be unique (enabled by default) (if it is enabled a unique index is created)
   * **update**: if the slugs can be updated if the field from where the slug is created is modified (disabled by default)
-  * **builder**: function that converts the base string to slug (*Mandango\Behavior\Util\Sluggable::slugify()* by default)
+  * **builder**: function that converts the base string to slug (*Mongator\Behavior\Util\Sluggable::slugify()* by default)
 
 Usage
 -----
@@ -35,14 +35,14 @@ Usage
 ::
 
     $article = $mandango->create('Model\Article')
-        ->setTitle('Mandango is ultrafast!')
+        ->setTitle('Mongator is ultrafast!')
         ->save()
     ;
 
     echo $article->getSlug(); // mandango-is-ultrafast
 
     $article2 = $mandango->create('Model\Article')
-        ->setTitle('Mandango is ultrafast!')
+        ->setTitle('Mongator is ultrafast!')
         ->save()
     ;
 

@@ -1,7 +1,7 @@
 Unit Of Work
 ============
 
-Mandango implements the `Unit Of Work`_ pattern, which simply means
+Mongator implements the `Unit Of Work`_ pattern, which simply means
 "send all database operation at once".
 
 Let's see an example::
@@ -16,7 +16,7 @@ Let's see an example::
 
     $article = $articleRepository->createQuery(array('name' => 'Mondongo'))->one();
     $article
-        ->setName('Mandango')
+        ->setName('Mongator')
         ->setAuthor($author)
         ->addCategories(array($category1, $category2))
     ;
@@ -37,6 +37,6 @@ can work if you want avoid as much as possible database inconsistency
 because of application breaks.
 
 And this is also the best way to get the maximum database performance, because
-Mandango does that the database operations are as efficient as possible.
+Mongator does that the database operations are as efficient as possible.
 
 .. _Unit of Work: http://martinfowler.com/eaaCatalog/unitOfWork.html

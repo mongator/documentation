@@ -14,13 +14,13 @@ generated, where and how they must be.
 Mondator is extremely flexible, because the classes that are generated from the
 config classes depend on the extensions that you have assigned them.
 
-Mandango uses an extension of Mondator to generate the classes of documents,
+Mongator uses an extension of Mondator to generate the classes of documents,
 repositories and queries.
 
 A simple example
 ----------------
 
-We are going to do a simple example with Mondator using Mandango, this way
+We are going to do a simple example with Mondator using Mongator, this way
 you will see step by step what you will have to do to use it and you will
 understand how it works.
 
@@ -29,7 +29,7 @@ Create a Mondator
 
 ::
 
-    use Mandango\Mondator\Mondator;
+    use Mongator\Mondator\Mondator;
 
     $mondator = new Mondator();
 
@@ -63,7 +63,7 @@ processed, so it is very important that it is the right order.
 The extensions also accept options to be able to customize its operation::
 
     $mondator->setExtensions(array(
-        new Mandango\Extension\Core(array(
+        new Mongator\Extension\Core(array(
             'metadata_factory_class' => 'Model\Mapping\MetadataFactory',
             'metadta_factory_output' => $modelDir.'/Mapping',
             'default_output'         => $modelDir,
@@ -85,7 +85,7 @@ process the mondator to generate the files of the classes::
 A full example
 --------------
 
-Let's see a full example, which you can use to start using Mandango::
+Let's see a full example, which you can use to start using Mongator::
 
     $mandangoDir = '/path/to/mandango';
     $modelDir  = '/path/to/Model';
@@ -97,14 +97,14 @@ Let's see a full example, which you can use to start using Mandango::
 
     $loader = new UniversalClassLoader();
     $loader->registerNamespaces(array(
-        'Mandango\Mondator' => $mandangoDir.'/vendor/mondator/src',
-        'Mandango'          => $mandangoDir.'/src/',
+        'Mongator\Mondator' => $mandangoDir.'/vendor/mondator/src',
+        'Mongator'          => $mandangoDir.'/src/',
         'Model'             => dirname($modelDir),
     ));
     $loader->register();
 
     // start Mondator
-    use Mandango\Mondator\Mondator;
+    use Mongator\Mondator\Mondator;
 
     $mondator = new Mondator();
 
@@ -120,7 +120,7 @@ Let's see a full example, which you can use to start using Mandango::
 
     // assign extensions
     $mondator->setExtensions(array(
-        new Mandango\Extension\Core(array(
+        new Mongator\Extension\Core(array(
             'metadata_factory_class'  => 'Model\Mapping\MetadataFactory',
             'metadata_factory_output' => $modelDir.'/Mapping',
             'default_output'          => $modelDir,

@@ -4,7 +4,7 @@ Outputs
 The outputs are used to indicate the output file of the classes and if they
 are overwritten or not::
 
-    use Mandango\Mondator\Output;
+    use Mongator\Mondator\Output;
 
     $modelDir = '/path/to/your/model/dir';
 

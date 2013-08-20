@@ -6,7 +6,7 @@ passing it the document class::
 
     $article = $mandango->create('Model\Article');
 
-Mandango uses setters and getters to modify and access to the document's data.
+Mongator uses setters and getters to modify and access to the document's data.
 
 Initializing
 ------------
@@ -46,7 +46,7 @@ Fields
 You have to use just the setters and getters::
 
     // setter
-    $article->setTitle('Mandango rocks!');
+    $article->setTitle('Mongator rocks!');
 
     // getter
     $title = $article->getTitle();
@@ -60,7 +60,7 @@ One
 To assign references to one you simply have to assign the referenced document
 to the reference's setter::
 
-    $author = $mandango->create('Mandango\Author');
+    $author = $mandango->create('Mongator\Author');
     $author->setName('pablodip');
 
     $article->setAuthor($author);
@@ -78,7 +78,7 @@ If there is no a reference document it just returns ``null``.
 Many
 ~~~~
 
-To work with references to many it is used a ``Mandango\ReferenceGroup`` object,
+To work with references to many it is used a ``Mongator\ReferenceGroup`` object,
 to store the referenced documents.
 
 Adding and deleting referenced documents::
@@ -169,16 +169,16 @@ Relations
 ---------
 
 The relations can only be accessed, and they return a document or a
-``Mandango\Query`` object depending on the type::
+``Mongator\Query`` object depending on the type::
 
     // one
     $phonenumber = $author->getPhonenumber(); // document
 
     // one_many
-    $articles = $authors->getArticles(); // Mandango\Query
+    $articles = $authors->getArticles(); // Mongator\Query
 
     // many_many
-    $articles = $category->getArticles(); // Mandango\Query
+    $articles = $category->getArticles(); // Mongator\Query
 
 .. note::
   We will see later why a query object is returned instead of an array
@@ -187,7 +187,7 @@ The relations can only be accessed, and they return a document or a
 Save and delete
 ---------------
 
-To save and delete Mandango documents you can use the methods
+To save and delete Mongator documents you can use the methods
 ``->save()`` y ``->delete()`` of the documents::
 
     // save

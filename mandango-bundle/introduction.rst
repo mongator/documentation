@@ -1,44 +1,44 @@
 Introduction
 ============
 
-The MandangoBundle is the bundle to use Mandango with Symfony2_.
+The MongatorBundle is the bundle to use Mongator with Symfony2_.
 
 Installation
 ------------
 
-Add Mandango and Mondator to your vendors:
+Add Mongator and Mondator to your vendors:
 
 .. code-block:: bash
 
     git submodule add git://github.com/mandango/mandango vendor/mandango
     git submodule add git://github.com/mandango/mondator vendor/mondator
 
-Add the MandangoBundle:
+Add the MongatorBundle:
 
 .. code-block:: bash
 
-    git submodule add git://github.com/mandango/MandangoBundle vendor/bundles/Mandango/MandangoBundle
+    git submodule add git://github.com/mandango/MongatorBundle vendor/bundles/Mongator/MongatorBundle
 
 Add all of them and the Model namespace to your autoload::
 
     // app/autoload.php
     $loader->registerNamespaces(array(
         // ...
-        'Mandango\MandangoBundle' => __DIR__.'/../vendor/bundles',
-        'Mandango\Mondator'       => __DIR__.'/../vendor/mondator/src',
-        'Mandango'                => __DIR__.'/../vendor/mandango/src',
+        'Mongator\MongatorBundle' => __DIR__.'/../vendor/bundles',
+        'Mongator\Mondator'       => __DIR__.'/../vendor/mondator/src',
+        'Mongator'                => __DIR__.'/../vendor/mandango/src',
         'Model'                   => __DIR__.'/../src/',
         // ...
     ));
 
-Add the MandangoBundle to your application kernel::
+Add the MongatorBundle to your application kernel::
 
     // app/AppKernel.php
     public function registerBundles()
     {
         return array(
             // ...
-            new Mandango\MandangoBundle\MandangoBundle(),
+            new Mongator\MongatorBundle\MongatorBundle(),
             // ...
         );
     }
@@ -46,7 +46,7 @@ Add the MandangoBundle to your application kernel::
 Configuration
 -------------
 
-Add Mandango to your configuration:
+Add Mongator to your configuration:
 
 .. code-block:: yaml
 
