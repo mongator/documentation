@@ -1,6 +1,9 @@
 Events
 =======
 
+Events by definition
+--------------------
+
 Mongator provides to execute methods in the documents before and after
 performing certain actions:
 
@@ -49,3 +52,25 @@ This feature does not have any penalty in performance if you don't use it,
 because the code to execute the methods is generated only if you indicate it
 explicitly. And if you use it, the performance penalty just depends on the
 methods you use.
+
+
+On-the-fly events
+-----------------
+
+All document object have 4 methods to include events as callbacks, this 
+callbacks are deleted after be launched. 
+
+.. hint::
+  * **registerOncePreInsertEvent**: before inserting
+  * **registerOncePostInsertEvent**: after inserting
+  * **registerOncePreUpdateEvent**: before updating
+  * **registerOncePostUpdateEvent**: after updating
+  
+  
+Just a little example:
+
+
+    $documents[1]->registerOncePostUpdateEvent(function($document) {
+        $document->setName('Foo');
+    });
+
