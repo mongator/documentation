@@ -2,7 +2,7 @@ Events
 =======
 
 Mongator provides support for `Symfony\EventDispacther`_ library, through the method `Mongator::setEventDispatcher`
-php::
+::
 	use Symfony\Component\EventDispatcher\EventDispatcher;
 	
 	$eventDispatcher = new EventDispatcher();
@@ -20,7 +20,7 @@ In every insert, update or delete over the documents the following event will be
 
 
 The event name pattern can be configured with the key `eventPattern` in the config class, in sprintf format: 
-php::
+::
 	array(
 	    'Model\Article' => array(
 	        // ...
