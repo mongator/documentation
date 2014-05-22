@@ -1,76 +1,33 @@
 Events
 =======
 
-Events by definition
---------------------
+Mongator provides support for `Symfony\EventDispacther`_ library, through the method `Mongator::setEventDispatcher`
+php::
+	use Symfony\Component\EventDispatcher\EventDispatcher;
+	
+	$eventDispatcher = new EventDispatcher();
+	$mongator->setEventDispatcher($eventDispatcher);
 
-Mongator provides to execute methods in the documents before and after
-performing certain actions:
-
-.. hint::
-  * **preInsert**: before inserting
-  * **postInsert**: after inserting
-  * **preUpdate**: before updating
-  * **postUpdate**: after updating
-  * **preDelete**: before deleting
-  * **postDelete**: after deleting
-
-You just have to define the document methods you want to execute and in what
-action in the config classes::
-
-    array(
-        'Model\Article' => array(
-            // ...
-            'events' => array(
-                'preInsert' => array('updateCreatedAtBeforeInsert'),
-                'preUpdate' => array('updateUpdatedAtBeforeUpdate'),
-            ),
-        ),
-    );
-
-And write the methods in the document class::
-
-    namespace Model\;
-
-    class Article extends \Model\Base\Article
-    {
-        public function updateCreatedAtBeforeInsert()
-        {
-            $this->setCreatedAt(new DateTime());
-        }
-
-        public function updateUpdatedAtBeforeUpdate()
-        {
-            $this->setUpdatedAt(new DateTime());
-        }
-    }
-
-.. note::
-  The document methods have to be public.
-
-This feature does not have any penalty in performance if you don't use it,
-because the code to execute the methods is generated only if you indicate it
-explicitly. And if you use it, the performance penalty just depends on the
-methods you use.
-
-
-On-the-fly events
------------------
-
-All document object have 4 methods to include events as callbacks, this 
-callbacks are deleted after be launched. 
+In every insert, update or delete over the documents the following event will be triggered:
 
 .. hint::
-  * **registerOncePreInsertEvent**: before inserting
-  * **registerOncePostInsertEvent**: after inserting
-  * **registerOncePreUpdateEvent**: before updating
-  * **registerOncePostUpdateEvent**: after updating
-  
-  
-Just a little example:
+  * **pre.insert**: before inserting
+  * **post.insert**: after inserting
+  * **pre.update**: before updating
+  * **post.update**: after updating
+  * **pre.delete**: before deleting (not for EmbeddedDocuments)
+  * **post.delete**: after deleting (not for EmbeddedDocuments)
 
 
-    $documents[1]->registerOncePostUpdateEvent(function($document) {
-        $document->setName('Foo');
-    });
+The event name pattern can be configured with the key `eventPattern` in the config class, in sprintf format: 
+php::
+	array(
+	    'Model\Article' => array(
+	        // ...
+	        'eventPattern' => 'article.event.%s',
+	    ),
+	);
 
+If no one is configured, the default pattern for this class, will be: `mongator.model.article.%s` where the %s is the name of the event.
+
+.. _Symfony\EventDispacther:  http://symfony.com/doc/current/components/event_dispatcher/introduction.html
